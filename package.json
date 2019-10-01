@@ -1,0 +1,16 @@
+{
+  "name": "lightning-talk-2019-10-03",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jerad Gallinger <jerad@jeradgallinger.ca>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "npx testem"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pretender": "^3.0.2",
+    "qunit": "^2.9.2"
+  }
+}
