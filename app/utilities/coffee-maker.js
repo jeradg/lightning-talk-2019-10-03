@@ -45,9 +45,10 @@ async function getUserPreferences(userName) {
 
   params.append('userName', userName);
 
-  const response = await fetch('https://cloud-coffee-service.example.com/user-prefs', {
-    body: params,
-  });
+  const baseUrl = 'https://cloud-coffee-service.example.com/user-prefs'
+  const url = `${baseUrl}?${params.toString()}`;
+
+  const response = await fetch(url);
 
   if (!response.ok) {
     throw new Error('Are you sure that user exists?');
