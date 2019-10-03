@@ -20,7 +20,9 @@ const beverageBeanMap = Object.freeze({
  */
 export default async function makeFavouriteCoffee(userName) {
   try {
-    const { favouriteBeverage: beverageName } = await getUserPreferences(userName);
+    const {
+      favouriteBeverage: beverageName,
+    } = await getUserPreferences(userName);
 
     const beanVariety = beverageBeanMap[beverageName];
 
@@ -45,7 +47,7 @@ async function getUserPreferences(userName) {
 
   params.append('userName', userName);
 
-  const baseUrl = 'https://cloud-coffee-service.example.com/user-prefs'
+  const baseUrl = 'https://cloud-coffee-service.example.com/user-prefs';
   const url = `${baseUrl}?${params.toString()}`;
 
   const response = await fetch(url);
