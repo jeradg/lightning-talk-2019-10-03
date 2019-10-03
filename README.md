@@ -1,4 +1,4 @@
-# Lightning talk on assert.step()/assert.verifySteps()
+# Lightning talk on `assert.step()`/`assert.verifySteps()`
 2019-10-03
 
 Coaching Circle onsite
